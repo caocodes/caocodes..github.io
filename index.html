@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto smooth-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about" data-offset="100">About</a>
@@ -48,30 +48,15 @@
                             <a class="nav-link" href="#contact" data-offset="100">Contact</a>
                         </li>
                     </ul>
-                    <!-- Social Icon  -->
-                    <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a class="nav-link"><i class="fa fa-facebook light-green-text-2"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"><i class="fa fa-twitter light-green-text-2"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"><i class="fa fa-instagram light-green-text-2"></i></a>
-                        </li>
-                    </ul>
+                    <!--Consider adding Social Icons later  -->
                 </div>
             </div>
         </nav>
 
         <!-- Intro Section -->
-        <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://source.unsplash.com/ZUvF7qEIcVI/1600x900'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-            <div class="mask rgba-white-strong">
-                <div class="container h-100 d-flex justify-content-center align-items-center">
-                    <div class="row smooth-scroll">
-                        <div class="col-md-12 pt-3">
-                            <div class="white-text text-center pt-5">
-                                <h1 class="display-2 mb-4 dark-grey-text wow fadeIn">Hi, I'm <strong>Cao</strong>.</h1>
+        <div id="home" class="col-md-12">
+                            <div id="home-text">
+                                <h1 class="display-2 mb-4 dark-grey-text fadeIn">Hi, I'm <strong>Cao</strong></h1>
                                 <h5 class="text-uppercase font-weight-bold wow fadeIn" data-wow-delay="0.4s"><mark>Front end web developer</mark></h5>
                                 <a href="#about" class="btn btn-floating btn-large wow fadeIn" data-wow-delay="0.4s" data-offset="100"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
                             </div>
@@ -296,17 +281,6 @@
         </div>    
         <!-- /.Third container -->      
         
-        <!-- Streak -->
-        <div class="streak streak-photo streak-md" style="background-image:url('https://source.unsplash.com/Yj1M5riCKk4/1600x900')">
-            <div class="mask flex-center rgba-indigo-strong">
-                <div class="white-text smooth-scroll mx-4">
-                    <h2 class="h2-responsive wow fadeIn mb-5"><i class="fa fa-quote-left" aria-hidden="true"></i> Sometimes science is a little more art than science. <i class="fa fa-quote-right" aria-hidden="true"></i></h2>
-                    <h5 class="text-center font-italic wow fadeIn" data-wow-delay="0.2s">~ Rick</h5>
-                </div>
-            </div>
-        </div>
-        <!-- /.Streak -->
-        
         <!-- Fourth container -->
         <div class="container">
             
@@ -314,7 +288,7 @@
             <section id="works" class="section mb-5">
                 
                 <!-- Section title -->
-                <h2 class="text-center text-uppercase my-5 pt-5 wow fadeIn" data-wow-delay="0.2s">My <strong>projects</strong></h2>
+                <h2 class="text-center text-uppercase my-5 pt-5 wow fadeIn" data-wow-delay="0.2s"><strong>projects</strong></h2>
 
                 <!-- Section description -->
                 <p class="text-center w-responsive mx-auto wow fadeIn my-5">Work in progress.</p>
@@ -446,16 +420,7 @@
     </main>
     <!--/Main layout-->
 
-    <!-- Scrollspy -->
-    <div class="dotted-scrollspy clearfix d-none d-sm-block">
-        <ul class="nav smooth-scroll flex-column">
-            <li class="nav-item"><a class="nav-link" href="#home"><span></span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#about"><span></span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills"><span></span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#works"><span></span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact"><span></span></a></li>
-        </ul>
-    </div>
+    <!-- Scrollspy...maybe later -->
 
 
     <!-- SCRIPTS --> 
@@ -469,27 +434,5 @@
     <!-- Bootstrap core Javascript -->
   	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="../mdb.min.js"></script>
-
-    <script>
-        // initialize scrollspy
-        $('body').scrollspy({
-            target: '.dotted-scrollspy'
-        });
-
-        // initialize lightbox
-        $(function () {
-            $("#mdb-lightbox-ui").load("../mdb-addons/mdb-lightbox-ui.html");
-        });
-
-        $('.navbar-collapse a').click(function(){
-            $(".navbar-collapse").collapse('hide');
-        });
-
-        /* WOW.js init */
-        new WOW().init();
-
-    </script>
 </body>
 </html>
