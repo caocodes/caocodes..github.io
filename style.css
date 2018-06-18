@@ -3,6 +3,7 @@ body,
 header,
 #home {
           height: 100%;
+          font-family: 'Roboto';
         }
 
 @media (min-width: 560px) and (max-width: 740px){
